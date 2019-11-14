@@ -5,15 +5,21 @@
 //the winner. This compare function will be below the play function.
 
 
+function cpu() {
+  let choice = Math.floor(Math.random() * 3) * 10;
+  return choice;
+}
+
 //this is where we will find the computers choice and compare it to the users.
 var game_result;
-function play(userChoice){
+function play(userChoice) {
+  compare
 }
 
 
 
 //this is where we decalre how to compare the choices based on the basic rules of RPS.
-//think about how a player wins/loses. What is the logic? View the flowchart for reference. 
-var compare = function(choice1, choice2){
+//think about how a player wins/loses. What is the logic? View the flowchart for reference.
+var compare = function(choice1, choice2) {
 
 }
