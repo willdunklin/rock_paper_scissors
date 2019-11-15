@@ -3,25 +3,31 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
-    <title>Rock..Paper..Scissors</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Rock Paper Scissors</title>
   </head>
   <body>
     <h1>Rock..Paper..Scissors..SHOOT!</h1>
     <h2>Press your choice to play!</h2>
     <div class="row">
       <div class="column">
-        <button type="button" class="rock-button" onclick="play(0)"></button>
+        <button type="button" class="rock-button" onclick="play(1)">Rock</button>
       </div>
       <div class="column">
-        <button type="button" class="paper-button" onclick="play(1)"></button>
+        <button type="button" class="paper-button" onclick="play(2)">Paper</button>
       </div>
       <div class="column">
-        <button type="button" class="scissors-button" onclick="play(2)"></button>
+        <button type="button" class="scissors-button" onclick="play(3)">Scissors</button>
       </div>
      </div>
     <div class="results">
-      <!-- results section -->
+      <div class="result win 1 6"><p></p><p>Wins Against</p><p></p></div>
+      <div class="result loss 2 9"><p></p><p>Loses Against</p><p></p></div>
+      <div class="result draw 3 4"><p></p><p>Draws Against</p><p></p></div>
     </div>
+    <footer>
+      <p>&copy; Will Dunklin 2019</p>
+    </footer>
     <script src="logic.js"></script>
   </body>
 </html>

@@ -1,25 +1,13 @@
+let results = document.getElementsByClassName("result");
+let moves = ["Rock", "Paper", "Scissors"];
 
-//We will first implement a function that generates a choice for the computer, and will
-//then compare it to that of the user. The users choice will be found through element id from the html.
-//In order to compare the results, we will have to make a funciton "compare" which will establish and respond with
-//the winner. This compare function will be below the play function.
-
-
-function cpu() {
-  let choice = Math.floor(Math.random() * 3) * 10;
-  return choice;
-}
-
-//this is where we will find the computers choice and compare it to the users.
-var game_result;
 function play(userChoice) {
-  compare
-}
-
-
-
-//this is where we decalre how to compare the choices based on the basic rules of RPS.
-//think about how a player wins/loses. What is the logic? View the flowchart for reference.
-var compare = function(choice1, choice2) {
-
+  let cpu = Math.floor(Math.random() * 3) + 1;
+  let result = document.getElementsByClassName(userChoice * cpu)[0];
+  for(let i = 0; i < 3; i++) {
+    results[i].style.display = "none";
+  }
+  result.style.display = "flex";
+  result.childNodes[0].innerHTML = moves[userChoice - 1];
+  result.childNodes[2].innerHTML = moves[3 * cpu % 4 - 1];
 }
